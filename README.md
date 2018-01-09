@@ -1,1 +1,1 @@
-# SuperMarket
+# SuperMarket Kata
