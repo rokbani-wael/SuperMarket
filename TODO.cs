@@ -6,8 +6,10 @@ class Program
             //AABBCC...
             var scannedProducts = Console.ReadLine();
             
+            //////
             //TODO
-
+            /////
+            
             var total = 0;
             Console.WriteLine(total);
             Console.ReadLine();
