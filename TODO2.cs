@@ -24,7 +24,10 @@ namespace SuperMarket
             //AABBCC...
             var scannedProduct = Console.ReadLine();
 
-            var total = CashRegister.CalculateTotal(catalog, discounts, scannedProduct.ToList());
+            //TODO
+            
+            var total = CashRegister.CalculateTotal(catalog, discounts, productsList);
+            
             Console.WriteLine(total);
 
             Console.ReadLine();
@@ -33,51 +36,20 @@ namespace SuperMarket
 
     public class Product
     {
-        public char Code { get; set; }
-
-        public decimal Price { get; set; }
-
-        public Product(char code, decimal price)
-        {
-            this.Code = code;
-            this.Price = price;
-        }
+        //TODO
     }
 
     public class Discount
     {
-        public char Code { get; set; }
-
-        public int Number { get; set; }
-
-        public decimal Value { get; set; }
-
-        public Discount(char code, int count, decimal value)
-        {
-            this.Code = code;
-            this.Number = count;
-            this.Value = value;
-        }
+        //TODO
     }
 
     public class CashRegister
     {
         public static decimal CalculateTotal(List<Product> catalog, List<Discount> discounts, List<char> scannedProduct)
         {
-            var cart = scannedProduct.GroupBy(p => p);
-
-            var total = cart.Sum(c => catalog.Find(p => p.Code == c.Key).Price * c.Count());
-
-            var discount = 0m;
-
-            foreach (var item in discounts)
-            {
-                discount += (cart.Any(c => c.Key == item.Code) && cart.First(c => c.Key == item.Code).Count() >= item.Number ?
-                            cart.First(c => c.Key == item.Code).Count() * catalog.Find(p=>p.Code == item.Code).Price * item.Value :
-                            0);
-            }
-
-            return total - discount;
+            //TODO
+            throw new NotImplementedException();
         }
     }
 }
