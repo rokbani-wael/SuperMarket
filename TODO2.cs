@@ -20,7 +20,7 @@ namespace SuperMarket
             #endregion
 
 
-            Console.WriteLine("Scan products");
+            Console.WriteLine("Scannez les produits");
             //AABBCC...
             var scannedProduct = Console.ReadLine();
 
