@@ -5,18 +5,24 @@ namespace SuperMarket
         static void Main(string[] args)
         {
             #region Init
-            List<Product> catalog = new List<Product>()
-            {
-                new Product('A', 50),
-                new Product('B', 25),
-                new Product('C', 30)
-            };
+          
+         //  Liste Produits
 
-            List<Discount> discounts = new List<Discount>()
-            {
-                new Discount('A', 3, 0.25m),
-                new Discount('B', 3, 0.10m)
-            };
+        //  Produit |  Prix
+        //  -----------------
+        //   A      |  50
+        //   B      |  25
+        //   C      |  30
+
+
+                
+        //  Discounts
+
+        //  CodeProduit  | Nombre  | %
+        //  ------------------------------
+        //  A            | 3       | 0.25
+        //  B            | 5       | 0.10
+                
             #endregion
 
 
@@ -28,20 +34,11 @@ namespace SuperMarket
             
             var total = CashRegister.CalculateTotal(catalog, discounts, productsList);
             
+            //Affichage du total
             Console.WriteLine(total);
-
+            //Pause program
             Console.ReadLine();
         }
-    }
-
-    public class Product
-    {
-        //TODO
-    }
-
-    public class Discount
-    {
-        //TODO
     }
 
     public class CashRegister
