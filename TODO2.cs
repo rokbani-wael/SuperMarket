@@ -23,14 +23,25 @@ namespace SuperMarket
         //  A            | 3       | 0.25
         //  B            | 5       | 0.10
                 
-            #endregion
+           
 
 
             Console.WriteLine("Scannez les produits");
             //AABBCC...
             var scannedProduct = Console.ReadLine();
-
+            
+            
             //TODO
+            ////////////////////////////////////////
+            
+            
+            //List<Product> catalog = 
+            //List<Discount> discounts =
+            //List<char> productsList =
+            
+             #endregion
+
+            
             
             var total = CashRegister.CalculateTotal(catalog, discounts, productsList);
             
